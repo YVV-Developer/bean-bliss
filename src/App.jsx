@@ -6,6 +6,7 @@ import Hero from './components/home';
 import Menu from './components/pages/Menu';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
+import Events from './components/pages/Events';
 
 
 window.react_app_url = "http://localhost:3000/";
