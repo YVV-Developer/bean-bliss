@@ -8,6 +8,7 @@ import About from './components/pages/About';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import Events from './components/pages/Events';
+import Booking from './components/pages/Booking';
 
 
 window.react_app_url = "http://localhost:3000/";
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
     </>

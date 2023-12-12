@@ -1,9 +1,68 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
 import { faMobileAndroidAlt } from '@fortawesome/free-solid-svg-icons';
+import iziToast from 'izitoast';
+
+import 'izitoast/dist/css/iziToast.min.css';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!formData.name.trim() || !formData.email.trim() || !formData.subject.trim() || !formData.message.trim()) {
+            // Display errors using iziToast
+            iziToast.error({
+                title: 'Error',
+                message: 'Please fill in all the required fields correctly.',
+                position: 'topCenter',
+            });
+        } else {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                // Display errors using iziToast
+                iziToast.error({
+                    title: 'Error',
+                    message: 'Please enter a valid email address.',
+                    position: 'topCenter',
+                });
+            } else {
+                console.log("dd");
+                // Save data to localStorage
+                localStorage.setItem('contactFormData', JSON.stringify(formData));
+
+                // Display success message
+                iziToast.success({
+                    title: 'Success',
+                    message: 'Form submitted successfully!',
+                    position: 'topCenter',
+                });
+
+                // Clear form data
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: '',
+                });
+            }
+        }
+    };
+
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
     return (
         <>
             <section id="contact" className="contact bg-[#0c0b09] text-white">
@@ -49,24 +108,24 @@ const Contact = () => {
                             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
                                 <div className="row">
                                     <div className="col-md-6 form-group">
-                                        <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                                        <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
                                     </div>
                                     <div className="col-md-6 form-group mt-3 mt-md-0">
-                                        <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                                        <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
                                     </div>
                                 </div>
                                 <div className="form-group mt-3">
-                                    <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
+                                    <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
                                 </div>
                                 <div className="form-group mt-3">
-                                    <textarea className="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                                    <textarea className="form-control" name="message" rows="8" placeholder="Message" value={formData.messege} onChange={handleChange} required></textarea>
                                 </div>
                                 <div className="my-3">
                                     <div className="loading">Loading</div>
                                     <div className="error-message"></div>
                                     <div className="sent-message">Your message has been sent. Thank you!</div>
                                 </div>
-                                <div className="text-center"><button type="submit">Send Message</button></div>
+                                <div className="text-center"><button onClick={handleSubmit} type='submit'>Send Message</button></div>
                             </form>
                         </div>
                     </div>
