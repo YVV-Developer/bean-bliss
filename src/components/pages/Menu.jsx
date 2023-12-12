@@ -15,7 +15,7 @@ const Menu = () => {
             <section id="menu" class="menu section-bg">
                 <div class="container" data-aos="fade-up">
 
-                    <div class="section-title">
+                    <div class="section-title mt-24">
                         <h2>Menu</h2>
                         <p>Check Our Tasty Menu</p>
                     </div>
