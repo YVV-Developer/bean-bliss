@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
@@ -31,7 +32,7 @@ const Navbar = () => {
                         <ul>
                             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                             <li><a class="nav-link scrollto" href="#about">About</a></li>
-                            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                            <li><NavLink class="nav-link scrollto" to="/menu">Menu</NavLink></li>
                             <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
                             <li><a class="nav-link scrollto" href="#events">Events</a></li>
                             <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
