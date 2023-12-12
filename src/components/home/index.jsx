@@ -279,59 +279,45 @@ const Hero = () => {
         </div>
         <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
           <div className="row g-0">
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary1} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary2} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary3} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary4} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary5} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <a className="gallery-lightbox" data-gall="gallery-item">
                   <img src={galary6} alt="" className="img-fluid" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-              <div className="gallery-item">
-                <a className="gallery-lightbox" data-gall="gallery-item">
-                  <img src={galary7} alt="" className="img-fluid" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-              <div className="gallery-item">
-                <a className="gallery-lightbox" data-gall="gallery-item">
-                  <img src={galary8} alt="" className="img-fluid" />
                 </a>
               </div>
             </div>

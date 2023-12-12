@@ -25,7 +25,7 @@ const Gallery = () => {
       <div className="container aos-init aos-animate mt-24" data-aos="fade-up">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p>Some photos from Our Restaurant</p>
+          <p>Photos from Our Restaurant</p>
         </div>
       </div>
 
