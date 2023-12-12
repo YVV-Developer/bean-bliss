@@ -12,7 +12,7 @@ const Footer = () => {
 
               <div className="col-lg-3 col-md-6">
                 <div className="footer-info">
-                  <h3>Restaurantly</h3>
+                  <h3>BeanBliss</h3>
                   <p>
                     A108 Adam Street <br />
                     NY 535022, USA<br /><br />
@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div className="container">
           <div className="copyright">
-            © Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+            © Copyright <strong><span>BeanBliss</span></strong>. All Rights Reserved
           </div>
         </div>
       </footer>

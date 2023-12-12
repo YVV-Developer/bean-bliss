@@ -27,7 +27,7 @@ const Gallery = () => {
           <h2>Gallery</h2>
           <p>Photos from Our Restaurant</p>
         </div>
-      </div>
+    </div> 
 
       <div className="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
         <div className="row g-0">

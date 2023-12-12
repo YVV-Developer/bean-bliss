@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="container position-relative text-center text-lg-start">
           <div className="row">
             <div className="col-lg-8">
-              <h1>Welcome to <span>Restaurantly</span></h1>
+              <h1>Welcome to <span>BeanBliss</span></h1>
               <h2>Delivering great food for more than 18 years!</h2>
               <div className="btns">
                 <a href="#menu" className="btn-menu animated fadeInUp scrollto no-underline">Our Menu</a>
