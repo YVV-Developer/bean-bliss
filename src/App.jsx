@@ -5,6 +5,8 @@ import Footer from './components/global/Footer';
 import Hero from './components/home';
 import Menu from './components/pages/Menu';
 import About from './components/pages/About';
+import Gallery from './components/pages/Gallery';
+import ContactUs from './components/pages/ContactUs';
 
 
 window.react_app_url = "http://localhost:3000/";
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/" element={<Hero />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactUs />} />
         {/* <Route path="/properties-details/:id" element={<PropertieDetails />} />
         <Route path="/contact-us" element={<ContactUs />} /> */}
       </Routes>

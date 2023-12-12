@@ -78,13 +78,13 @@ const Menu = () => {
         <>
             <section id="menu" className="menu section-bg">
                 <div className="container">
-                    <div className="section-title mt-24">
+                    <div className="section-title mt-24" data-aos="fade-up">
                         <h2>Menu</h2>
                         <p>Check Our Tasty Menu</p>
                     </div>
 
-                    <div className="row" data-aos-delay="100">
-                        <div className="col-lg-12 d-flex justify-content-center">
+                    <div className="row">
+                        <div className="col-lg-12 d-flex justify-content-center" data-aos="fade-up">
                             <ul id="menu-flters">
                                 <li onClick={() => handleFilterClick('*')} className={filter === '*' ? 'filter-active' : ''}>
                                     All
@@ -111,7 +111,7 @@ const Menu = () => {
                         </div>
                     </div>
 
-                    <div className="row menu-container" data-aos-delay="200">
+                    <div className="row menu-container" data-aos="fade-up">
                         {menuItems.map((item, index) => (
                             <div
                                 key={index}
