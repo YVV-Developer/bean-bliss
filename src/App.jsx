@@ -5,6 +5,7 @@ import Footer from './components/global/Footer';
 import Hero from './components/home';
 import Menu from './components/pages/Menu';
 
+
 window.react_app_url = "http://localhost:3000/";
 
 const App = () => {
