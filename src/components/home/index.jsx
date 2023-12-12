@@ -1,34 +1,28 @@
 import React from 'react';
-import light from '../../assets/images/light.png';
-import headerLine from '../../assets/images/header-line.png';
-import tableSet from '../../assets/images/table-set.png';
-
 const Hero = () => {
   return (
-    <div>
-      <section className="tm-welcome-section">
-        <div className="container tm-position-relative">
-          <div className="tm-lights-container">
-            <img src={light} alt="Light" className="light light-1" />
-            <img src={light} alt="Light" className="light light-2" />
-            <img src={light} alt="Light" className="light light-3" />
+    <>
+      <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>Welcome to <span>Restaurantly</span></h1>
+              <h2>Delivering great food for more than 18 years!</h2>
+
+              <div class="btns">
+                <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+                <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+              <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+            </div>
+
           </div>
-          <div className="row tm-welcome-content">
-            <h2 className="white-text tm-handwriting-font tm-welcome-header">
-              <img src={headerLine} alt="Line" className="tm-header-line" />&nbsp;Welcome To&nbsp;&nbsp;
-              <img src={headerLine} alt="Line" className="tm-header-line" />
-            </h2>
-            <h2 className="gold-text tm-welcome-header-2">Cafe House</h2>
-            <p className="gray-text tm-welcome-description">
-              Cafe House template is a mobile-friendly responsive <span className="gold-text">Bootstrap v3.3.5</span> layout by <span className="gold-text">templatemo</span>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            </p>
-            <a href="#main" className="tm-more-button tm-more-button-welcome">Details</a>
-          </div>
-          <img src={tableSet} alt="Table Set" className="tm-table-set img-responsive" />
         </div>
       </section>
-    </div>
-  );
-};
+    </>
+  )
+}
 
 export default Hero;
