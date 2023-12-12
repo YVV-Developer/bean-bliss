@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Raleway:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Afacad&family=Damion&family=Dosis&family=Exo+2:wght@600&family=Open+Sans:wght@300&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Playfair+Display&family=Poppins&family=Raleway:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -80,6 +77,10 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.active{
+  color: #cda45e;
 }
 
 /*--------------------------------------------------------------
@@ -202,11 +203,12 @@ h6 {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Exo';
 }
 
 #header .logo a {
   color: #fff;
+  text-decoration: none;
 }
 
 #header .logo img {
@@ -1059,6 +1061,8 @@ section {
 /*--------------------------------------------------------------
   # Events
   --------------------------------------------------------------*/
+
+
 .events {
   background: url('../src/assets/img/events-bg.jpg') center center no-repeat;
   background-size: cover;

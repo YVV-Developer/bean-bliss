@@ -5,9 +5,6 @@ import specialItem2 from '../../assets/img/specials-2.png'
 import specialItem3 from '../../assets/img/specials-3.png'
 import specialItem4 from '../../assets/img/specials-4.png'
 import specialItem5 from '../../assets/img/specials-5.png'
-import eventPrivet from '../../assets/img/event-private.jpg'
-import eventBdy from '../../assets/img/event-birthday.jpg'
-import eventImg from '../../assets/img/event-custom.jpg'
 import testimonials1 from '../../assets/img/testimonials/testimonials-1.jpg'
 import testimonials2 from '../../assets/img/testimonials/testimonials-2.jpg'
 import testimonials3 from '../../assets/img/testimonials/testimonials-3.jpg'
@@ -28,8 +25,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faClock, faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
-import { faMobileAndroidAlt,  faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faLinkedin,  faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faMobileAndroidAlt, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Hero = () => {
 
@@ -39,15 +36,15 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" class="d-flex align-items-center">
-        <div class="container position-relative text-center text-lg-start">
-          <div class="row">
-            <div class="col-lg-8">
+      <section id="hero" className="d-flex align-items-center">
+        <div className="container position-relative text-center text-lg-start">
+          <div className="row">
+            <div className="col-lg-8">
               <h1>Welcome to <span>Restaurantly</span></h1>
               <h2>Delivering great food for more than 18 years!</h2>
               <div className="btns">
-                <a href="#menu" className="btn-menu animated fadeInUp scrollto">Our Menu</a>
-                <a href="#book-a-table" className="btn-book animated fadeInUp scrollto">Book a Table</a>
+                <a href="#menu" className="btn-menu animated fadeInUp scrollto no-underline">Our Menu</a>
+                <a href="#book-a-table" className="btn-book animated fadeInUp scrollto no-underline">Book a Table</a>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
@@ -57,8 +54,8 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+      <section id="about" className="about">
+        <div className="container" data-aos="fade-up">
 
           <div className="row">
             <div className="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
@@ -66,16 +63,16 @@ const Hero = () => {
                 <img src={aboutImg} alt="" />
               </div>
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
               <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
               <p className="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i className="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
               </ul>
               <p>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -214,101 +211,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-
-      <section id="events" className="events">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title">
-            <h2>Events</h2>
-            <p>Organize Your Events in our Restaurant</p>
-          </div>
-          <div className="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div className="row event-item">
-                  <div className="col-lg-6">
-                    <img src={eventBdy} className="img-fluid" alt="" />
-                  </div>
-                  <div className="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Birthday Parties</h3>
-                    <div className="price">
-                      <p><span>$189</span></p>
-                    </div>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    </ul>
-                    <p>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                      velit esse cillum dolore eu fugiat nulla pariatur
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="row event-item">
-                  <div className="col-lg-6">
-                    <img src={eventPrivet} className="img-fluid" alt="" />
-                  </div>
-                  <div className="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Private Parties</h3>
-                    <div className="price">
-                      <p><span>$290</span></p>
-                    </div>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    </ul>
-                    <p>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                      velit esse cillum dolore eu fugiat nulla pariatur
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="row event-item">
-                  <div className="col-lg-6">
-                    <img src={eventImg} className="img-fluid" alt="" />
-                  </div>
-                  <div className="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Custom Parties</h3>
-                    <div className="price">
-                      <p><span>$99</span></p>
-                    </div>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                      <li><i><FontAwesomeIcon icon={faCheckCircle} /></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    </ul>
-                    <p>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                      velit esse cillum dolore eu fugiat nulla pariatur
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-
 
       <section id="book-a-table" className="book-a-table bg-[#0c0b09]">
         <div className="container" data-aos="fade-up">
@@ -565,74 +467,6 @@ const Hero = () => {
         </div>
       </section>
 
-
-
-      <section id="contact" className="contact bg-[#0c0b09] text-white">
-        <div className="container" data-aos="fade-up">
-          <div className="section-title">
-            <h2>Contact</h2>
-            <p>Contact Us</p>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <iframe style={{ border: '0', width: '100%', height: '350px' }} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div className="container" data-aos="fade-up">
-          <div className="row mt-5">
-            <div className="col-lg-4">
-              <div className="info">
-                <div className="address">
-                  <i><FontAwesomeIcon icon={faMap} /></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-                <div className="open-hours">
-                  <i><FontAwesomeIcon icon={faClock} /></i>
-                  <h4>Open Hours:</h4>
-                  <p>
-                    Monday-Saturday:<br />
-                    11:00 AM - 2300 PM
-                  </p>
-                </div>
-                <div className="email">
-                  <i><FontAwesomeIcon icon={faEnvelope} /></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-                <div className="phone">
-                  <i><FontAwesomeIcon icon={faMobileAndroidAlt} /></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-8 mt-5 mt-lg-0">
-              <form action="forms/contact.php" method="post" role="form" className="php-email-form">
-                <div className="row">
-                  <div className="col-md-6 form-group">
-                    <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
-                  </div>
-                  <div className="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
-                  </div>
-                </div>
-                <div className="form-group mt-3">
-                  <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
-                </div>
-                <div className="form-group mt-3">
-                  <textarea className="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-                </div>
-                <div className="my-3">
-                  <div className="loading">Loading</div>
-                  <div className="error-message"></div>
-                  <div className="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div className="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

@@ -4,6 +4,8 @@ import Navbar from './components/global/Navbar';
 import Footer from './components/global/Footer';
 import Hero from './components/home';
 import Menu from './components/pages/Menu';
+import Events from './components/pages/Events';
+import Contact from './components/pages/Contact';
 
 
 window.react_app_url = "http://localhost:3000/";
@@ -15,8 +17,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/menu" element={<Menu />} />
-        {/* <Route path="/properties-details/:id" element={<PropertieDetails />} />
-        <Route path="/contact-us" element={<ContactUs />} /> */}
+        <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

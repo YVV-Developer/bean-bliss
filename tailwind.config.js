@@ -9,6 +9,7 @@ module.exports = {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         sans: ['Inter'],
+        Afacad: ['Afacad'],
       },
     },
   },
