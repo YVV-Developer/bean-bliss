@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import aboutImg from '../../assets/img/about.jpg'
 import specialItem1 from '../../assets/img/specials-1.png'
 import specialItem2 from '../../assets/img/specials-2.png'
 import specialItem3 from '../../assets/img/specials-3.png'
@@ -57,7 +56,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="about" class="about">
+      {/* <section id="about" class="about">
         <div class="container" data-aos="fade-up">
 
           <div className="row">
@@ -118,7 +117,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <section id="specials" className="specials bg-[#0c0b09]">

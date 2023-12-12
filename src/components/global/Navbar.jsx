@@ -31,7 +31,7 @@ const Navbar = () => {
                     <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
                             <li><a className="nav-link scrollto active" href="/">Home</a></li>
-                            <li><a className="nav-link scrollto" href="#about">About</a></li>
+                            <li><NavLink className="nav-link scrollto" to="/about">About</NavLink></li>
                             <li><NavLink className="nav-link scrollto" to="/menu">Menu</NavLink></li>
                             <li><a className="nav-link scrollto" href="#specials">Specials</a></li>
                             <li><a className="nav-link scrollto" href="#events">Events</a></li>
