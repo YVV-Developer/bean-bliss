@@ -35,7 +35,7 @@ const Navbar = () => {
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
-                    <Link to="/book-a-table" className="book-a-table-btn scrollto d-none d-lg-flex no-underline">Book a table</Link>
+                    <Link to="/booking" className="book-a-table-btn scrollto d-none d-lg-flex no-underline">Book a table</Link>
 
                 </div>
             </header>
