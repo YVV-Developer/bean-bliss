@@ -1,5 +1,4 @@
-import React from 'react'
-import lobsterbisque from '../../assets/img/menu/lobster-bisque.jpg'
+import React from 'react';import lobsterbisque from '../../assets/img/menu/lobster-bisque.jpg'
 import breadbarrel from '../../assets/img/menu/bread-barrel.jpg'
 import cake from '../../assets/img/menu/cake.jpg'
 import caesar from '../../assets/img/menu/caesar.jpg'
@@ -148,4 +147,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
