@@ -232,11 +232,31 @@ h6 {
 /**
   * Desktop Navigation 
   */
+.navbar li a {
+  color: white;
+}
 
-.active {
+.navbar .active {
+  border: 2px solid #cda45e;
   font-weight: 600;
   color: #cda45e;
+  border: 2px solid #cda45e;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar li a {
+    width: 300px;
+  }
+  .navbar .active {
+    width: 300px;
+    border-radius: 0%;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
   # Hero Section
