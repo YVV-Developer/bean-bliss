@@ -1,8 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
 import { faMobileAndroidAlt } from '@fortawesome/free-solid-svg-icons';
 import iziToast from 'izitoast';
+import { Helmet } from 'react-helmet';
 
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -65,6 +66,9 @@ const Contact = () => {
     };
     return (
         <>
+            <Helmet>
+                <title>Contact Us - BeanBliss</title>
+            </Helmet>
             <section id="contact" className="contact bg-[#0c0b09] text-white">
                 <div className="container mt-24" data-aos="fade-up">
                     <div className="section-title">

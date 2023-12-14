@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { Helmet } from 'react-helmet';
 
 const Booking = () => {
     const [formData, setFormData] = useState({
@@ -77,71 +78,76 @@ const Booking = () => {
     };
 
     return (
-        <section id="book-a-table" className="book-a-table bg-[#0c0b09]">
-            <div className="container mt-24" data-aos="fade-up">
-                <div className="section-title">
-                    <h2>Reservation</h2>
-                    <p>Book a Table</p>
+        <>
+            <Helmet>
+                <title>Booking - BeanBliss</title>
+            </Helmet>
+            <section id="book-a-table" className="book-a-table bg-[#0c0b09]">
+                <div className="container mt-24" data-aos="fade-up">
+                    <div className="section-title">
+                        <h2>Reservation</h2>
+                        <p>Book a Table</p>
+                    </div>
+                    <form
+                        method="post"
+                        role="form"
+                        className="php-email-form"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        onSubmit={handleSubmit}
+                    >
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 form-group">
+                                <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value={formData.name} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" value={formData.email} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                                <input type="text" className="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value={formData.phone} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 form-group mt-3">
+                                <input type="date" name="date" className="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value={formData.date} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 form-group mt-3">
+                                <input type="time" className="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value={formData.time} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 form-group mt-3">
+                                <input type="number" className="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars" value={formData.people} onChange={handleChange} />
+                                <div className="validate"></div>
+                            </div>
+                        </div>
+                        <div className="form-group mt-3">
+                            <textarea
+                                className="form-control"
+                                name="message"
+                                rows="5"
+                                placeholder="Message"
+                                value={formData.message}
+                                onChange={handleChange}
+                            ></textarea>
+                            <div className="validate"></div>
+                        </div>
+                        <div className="mb-3">
+                            <div className="loading">Loading</div>
+                            <div className="error-message"></div>
+                            <div className="sent-message">
+                                Your booking request was sent. We will call back or send an Email to confirm your reservation.
+                                Thank you!
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <button type="submit">Book a Table</button>
+                        </div>
+                    </form>
                 </div>
-                <form
-                    method="post"
-                    role="form"
-                    className="php-email-form"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                    onSubmit={handleSubmit}
-                >
-                     <div className="row">
-                        <div className="col-lg-4 col-md-6 form-group">
-                            <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  value={formData.name} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"  value={formData.email} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <input type="text" className="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  value={formData.phone} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="date" name="date" className="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  value={formData.date} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="time" className="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  value={formData.time} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="number" className="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars" value={formData.people} onChange={handleChange}/>
-                            <div className="validate"></div>
-                        </div>
-                    </div>
-                    <div className="form-group mt-3">
-                        <textarea
-                            className="form-control"
-                            name="message"
-                            rows="5"
-                            placeholder="Message"
-                            value={formData.message}
-                            onChange={handleChange}
-                        ></textarea>
-                        <div className="validate"></div>
-                    </div>
-                    <div className="mb-3">
-                        <div className="loading">Loading</div>
-                        <div className="error-message"></div>
-                        <div className="sent-message">
-                            Your booking request was sent. We will call back or send an Email to confirm your reservation.
-                            Thank you!
-                        </div>
-                    </div>
-                    <div className="text-center">
-                        <button type="submit">Book a Table</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

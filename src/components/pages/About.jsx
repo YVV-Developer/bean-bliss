@@ -1,10 +1,13 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import aboutImg from '../../assets/img/about.jpg'
+import { Helmet } from 'react-helmet';
 
 const About = () => {
     return (
         <>
+            <Helmet>
+                <title>About Us - BeanBliss</title>
+            </Helmet>
             <section id="about" className="about">
                 <div className="container" data-aos="fade-up">
                     <div className="section-title mt-24 relative">
