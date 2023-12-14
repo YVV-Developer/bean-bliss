@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/global/Navbar';
 import Footer from './components/global/Footer';
 import Hero from './components/home';
@@ -10,10 +10,13 @@ import Contact from './components/pages/Contact';
 import Events from './components/pages/Events';
 import Booking from './components/pages/Booking';
 
-
-window.react_app_url = "http://localhost:3000/";
-
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <Navbar />

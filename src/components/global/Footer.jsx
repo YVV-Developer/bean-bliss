@@ -4,13 +4,13 @@ import { faTwitter, faFontAwesome, faFacebook, faLinkedin, faInstagram } from '@
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
+  
   return (
     <>
       <footer id="footer">
         <div className="footer-top">
           <div className="container">
             <div className="row">
-
               <div className="col-lg-3 col-md-6">
                 <div className="footer-info">
                   <h3>BeanBliss</h3>
@@ -39,7 +39,7 @@ const Footer = () => {
                   <li><i className="bx bx-chevron-right"></i> <NavLink to="/contact">Contact</NavLink></li>
                 </ul>
               </div>
-    
+
               <div className="col-lg-3 col-md-6 footer-links">
                 <h4>Our Services</h4>
                 <ul>
