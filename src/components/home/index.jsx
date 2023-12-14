@@ -48,7 +48,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-              <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" className="glightbox play-btn"></a>
+              <a href="https://youtu.be/rI8FOLA-9XM?si=L9h-d1_a8a_RFawx" className="glightbox play-btn"></a>
             </div>
           </div>
         </div>
