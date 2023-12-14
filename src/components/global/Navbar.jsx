@@ -1,28 +1,41 @@
-import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentDateTime(new Date());
+        }, 1000);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, []);
     return (
         <>
             <div id="topbar" className="d-flex align-items-center fixed-top">
                 <div className="container d-flex justify-content-center justify-content-md-between">
                     <div className="contact-info d-flex align-items-center">
-                        <i className="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-                        <i className="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+                        <i className="bi bi-phone d-flex align-items-center">
+                            <span>+1 5589 55488 55</span>
+                        </i>
+                        <i className="bi bi-clock d-flex align-items-center ms-4">
+                            <span> Mon-Sat: 11AM - 23PM</span>
+                        </i>
                     </div>
-                    <div className="languages d-none d-md-flex align-items-center">
-                        <ul>
-                            <li>En</li>
-                            <li><a href="#">De</a></li>
-                        </ul>
+                    <div className="d-none d-md-flex align-items-center">
+                        <i className="bi bi-clock d-flex align-items-center ms-4">
+                            <span className='text-white'>{currentDateTime.toLocaleString()}</span>
+                        </i>
                     </div>
                 </div>
             </div>
