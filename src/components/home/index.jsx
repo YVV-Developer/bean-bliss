@@ -15,16 +15,13 @@ import galary3 from '../../assets/img/gallery/gallery-3.jpg'
 import galary4 from '../../assets/img/gallery/gallery-4.jpg'
 import galary5 from '../../assets/img/gallery/gallery-5.jpg'
 import galary6 from '../../assets/img/gallery/gallery-6.jpg'
-import galary7 from '../../assets/img/gallery/gallery-7.jpg'
-import galary8 from '../../assets/img/gallery/gallery-8.jpg'
 import chefs1 from '../../assets/img/chefs/chefs-1.jpg'
 import chefs2 from '../../assets/img/chefs/chefs-2.jpg'
 import chefs3 from '../../assets/img/chefs/chefs-3.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faClock, faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
-import { faMobileAndroidAlt, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -38,7 +35,7 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>BeanBliss</title>
+        <title>BEAN BLISS</title>
       </Helmet>
       <section id="hero" className="d-flex align-items-center">
         <div className="container position-relative text-center text-lg-start">
@@ -52,7 +49,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-              <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" className="glightbox play-btn"></a>
+              <a href="https://youtu.be/rI8FOLA-9XM?si=L9h-d1_a8a_RFawx" className="glightbox play-btn"></a>
             </div>
           </div>
         </div>
