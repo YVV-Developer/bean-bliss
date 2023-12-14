@@ -297,10 +297,10 @@ const Hero = () => {
                     <span>Master Chef</span>
                   </div>
                   <div className="social">
-                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
-                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
-                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
-                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
+                    <Link to="https://x.com/" target='_blanck'><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/" target='_blanck'><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/" target='_blanck'><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/" target='_blanck'><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
@@ -314,10 +314,10 @@ const Hero = () => {
                     <span>Patissier</span>
                   </div>
                   <div className="social">
-                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
-                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
-                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
-                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
+                    <Link to="https://x.com/" target='_blanck'><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/" target='_blanck'><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/" target='_blanck'><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/" target='_blanck'><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
@@ -331,10 +331,10 @@ const Hero = () => {
                     <span>Cook</span>
                   </div>
                   <div className="social">
-                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
-                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
-                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
-                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
+                    <Link to="https://x.com/" target='_blanck'><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/" target='_blanck'><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/" target='_blanck'><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/" target='_blanck'><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
