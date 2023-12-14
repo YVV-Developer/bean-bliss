@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFontAwesome, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { faFontAwesome, faFacebook, faLinkedin, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -21,11 +21,10 @@ const Footer = () => {
                     <strong>Email:</strong> info@example.com<br />
                   </p>
                   <div className="social-links mt-3">
-                    <a href="#" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a href="#" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="#" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a>
-                    <a href="#" className="google-plus"><FontAwesomeIcon icon={faFontAwesome} /></a>
-                    <a href="#" className="linkedin"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <Link to="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link to="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link to="https://x.com/" className="twitter"><FontAwesomeIcon icon={faXTwitter} /></Link>
+                    <Link to="https://www.linkedin.com/" className="linkedin"><FontAwesomeIcon icon={faLinkedin} /></Link>
                   </div>
                 </div>
               </div>
@@ -33,19 +32,19 @@ const Footer = () => {
               <div className="col-lg-2 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/">Home</NavLink></li>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/about">About</NavLink></li>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/gallery">Gallery</NavLink></li>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/contact">Contact</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/" className="no-underline">Home</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/about" className="no-underline">About</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/gallery" className="no-underline">Gallery</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/contact" className="no-underline">Contact</NavLink></li>
                 </ul>
               </div>
-    
+
               <div className="col-lg-3 col-md-6 footer-links">
                 <h4>Our Services</h4>
                 <ul>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/booking">Book Table</NavLink></li>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/menu">Menu</NavLink></li>
-                  <li><i className="bx bx-chevron-right"></i> <NavLink to="/events">Events</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/booking" className="no-underline">Book Table</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/menu" className="no-underline">Menu</NavLink></li>
+                  <li><i className="bx bx-chevron-right"></i><NavLink to="/events" className="no-underline">Events</NavLink></li>
                 </ul>
               </div>
 
