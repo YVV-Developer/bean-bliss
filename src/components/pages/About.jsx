@@ -5,8 +5,8 @@ import aboutImg from '../../assets/img/about.jpg'
 const About = () => {
     return (
         <>
-            <section id="about" class="about">
-                <div class="container" data-aos="fade-up">
+            <section id="about" className="about">
+                <div className="container" data-aos="fade-up">
                     <div className="section-title mt-24 relative">
                         <h2>About Us</h2>
                         <p>Check About Our Restaurant</p>
@@ -17,16 +17,16 @@ const About = () => {
                                 <img src={aboutImg} alt="" />
                             </div>
                         </div>
-                        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content invert-0">
+                        <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content invert-0">
                             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                             <p className="fst-italic">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.
                             </p>
                             <ul>
-                                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i className="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                             </ul>
                             <p>
                                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
