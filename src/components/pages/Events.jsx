@@ -5,10 +5,14 @@ import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import eventPrivet from '../../assets/img/event-private.jpg'
 import eventBdy from '../../assets/img/event-birthday.jpg'
 import eventImg from '../../assets/img/event-custom.jpg'
+import { Helmet } from 'react-helmet';
 
 const Events = () => {
     return (
         <>
+            <Helmet>
+                <title>Events - BeanBliss</title>
+            </Helmet>
             <section id="events" className="events">
                 <div className="container mt-24" data-aos="fade-up">
                     <div className="section-title">

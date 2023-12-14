@@ -8,6 +8,7 @@ import greeksalad from '../../assets/img/menu/greek-salad.jpg'
 import spinachsalad from '../../assets/img/menu/spinach-salad.jpg'
 import lobsterroll from '../../assets/img/menu/lobster-roll.jpg'
 import lobsterbisque from '../../assets/img/menu/lobster-bisque.jpg'
+import { Helmet } from 'react-helmet';
 
 const Menu = () => {
     const [filter, setFilter] = useState('*');
@@ -76,6 +77,9 @@ const Menu = () => {
     ];
     return (
         <>
+            <Helmet>
+                <title>Menu - BeanBliss</title>
+            </Helmet>
             <section id="menu" className="menu section-bg">
                 <div className="container">
                     <div className="section-title mt-24" data-aos="fade-up">
@@ -129,7 +133,7 @@ const Menu = () => {
                     </div>
                 </div>
             </section>
-            
+
         </>
     )
 }

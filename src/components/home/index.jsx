@@ -27,6 +27,7 @@ import { faCheckCircle, faClock, faEnvelope, faMap } from '@fortawesome/free-reg
 import { faMobileAndroidAlt, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Hero = () => {
 
@@ -36,6 +37,9 @@ const Hero = () => {
 
   return (
     <>
+      <Helmet>
+        <title>BeanBliss</title>
+      </Helmet>
       <section id="hero" className="d-flex align-items-center">
         <div className="container position-relative text-center text-lg-start">
           <div className="row">

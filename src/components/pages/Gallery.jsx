@@ -7,6 +7,7 @@ import gallery5 from '../../assets/img/gallery/gallery-5.jpg'
 import gallery6 from '../../assets/img/gallery/gallery-6.jpg'
 import gallery7 from '../../assets/img/gallery/gallery-7.jpg'
 import gallery8 from '../../assets/img/gallery/gallery-8.jpg'
+import { Helmet } from 'react-helmet';
 
 const Gallery = () => {
   const galleryItems = [
@@ -21,28 +22,33 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="section-bg gallery">
-      <div className="container aos-init aos-animate mt-24" data-aos="fade-up">
-        <div className="section-title">
-          <h2>Gallery</h2>
-          <p>Photos from Our Restaurant</p>
+    <>
+      <Helmet>
+        <title>Gallery - BeanBliss</title>
+      </Helmet>
+      <section id="gallery" className="section-bg gallery">
+        <div className="container aos-init aos-animate mt-24" data-aos="fade-up">
+          <div className="section-title">
+            <h2>Gallery</h2>
+            <p>Photos from Our Restaurant</p>
+          </div>
         </div>
-    </div> 
 
-      <div className="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-        <div className="row g-0">
-          {galleryItems.map((item, index) => (
-            <div key={index} className="col-lg-6 col-md-6">
-              <div className="gallery-item">
-                <a href={item} className="gallery-lightbox" data-gall={`gallery-item-${index}`}>
-                  <img src={item} alt={`Gallery ${index + 1}`} className="img-fluid" />
-                </a>
+        <div className="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div className="row g-0">
+            {galleryItems.map((item, index) => (
+              <div key={index} className="col-lg-6 col-md-6">
+                <div className="gallery-item">
+                  <a href={item} className="gallery-lightbox" data-gall={`gallery-item-${index}`}>
+                    <img src={item} alt={`Gallery ${index + 1}`} className="img-fluid" />
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
