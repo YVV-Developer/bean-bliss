@@ -23,7 +23,7 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const Hero = () => {
@@ -297,10 +297,10 @@ const Hero = () => {
                     <span>Master Chef</span>
                   </div>
                   <div className="social">
-                    <a href=""><i><FontAwesomeIcon icon={faXTwitter} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faFacebook} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faInstagram} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faLinkedin} /></i></a>
+                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
@@ -314,10 +314,10 @@ const Hero = () => {
                     <span>Patissier</span>
                   </div>
                   <div className="social">
-                    <a href=""><i><FontAwesomeIcon icon={faXTwitter} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faFacebook} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faInstagram} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faLinkedin} /></i></a>
+                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
@@ -331,10 +331,10 @@ const Hero = () => {
                     <span>Cook</span>
                   </div>
                   <div className="social">
-                    <a href=""><i><FontAwesomeIcon icon={faXTwitter} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faFacebook} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faInstagram} /></i></a>
-                    <a href=""><i><FontAwesomeIcon icon={faLinkedin} /></i></a>
+                    <Link to="https://x.com/"><i><FontAwesomeIcon icon={faXTwitter} /></i></Link>
+                    <Link to="https://www.facebook.com/"><i><FontAwesomeIcon icon={faFacebook} /></i></Link>
+                    <Link to="https://www.instagram.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></Link>
+                    <Link to="https://www.linkedin.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></Link>
                   </div>
                 </div>
               </div>
