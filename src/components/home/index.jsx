@@ -26,6 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faClock, faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
 import { faMobileAndroidAlt, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -42,8 +43,8 @@ const Hero = () => {
               <h1>Welcome to <span>BeanBliss</span></h1>
               <h2>Delivering great food for more than 18 years!</h2>
               <div className="btns">
-                <a href="#menu" className="btn-menu animated fadeInUp scrollto no-underline">Our Menu</a>
-                <a href="#book-a-table" className="btn-book animated fadeInUp scrollto no-underline">Book a Table</a>
+                <NavLink to="/menu" className="btn-menu animated fadeInUp scrollto no-underline">Our Menu</NavLink>
+                <NavLink to="/booking" className="btn-book animated fadeInUp scrollto no-underline">Book a Table</NavLink>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
